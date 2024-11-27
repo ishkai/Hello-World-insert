@@ -1,21 +1,28 @@
 {
-  "name": "for-fun",
-  "displayName": "for-fun",
-  "description": "",
+  "name": "hello-world-mode",
+  "displayName": "Hello World Mode",
+  "description": "A simple VS Code extension to replace typed characters with 'Hello, World!'.",
   "version": "0.0.1",
   "engines": {
-    "vscode": "^1.95.0"
+    "vscode": "^1.75.0"
   },
   "categories": [
     "Other"
   ],
-  "activationEvents": [],
+  "activationEvents": [
+    "onCommand:helloWorldMode.enable",
+    "onCommand:helloWorldMode.disable"
+  ],
   "main": "./out/extension.js",
   "contributes": {
     "commands": [
       {
-        "command": "for-fun.helloWorld",
-        "title": "Hello World"
+        "command": "helloWorldMode.enable",
+        "title": "Enable Hello World Mode"
+      },
+      {
+        "command": "helloWorldMode.disable",
+        "title": "Disable Hello World Mode"
       }
     ]
   },
@@ -28,14 +35,13 @@
     "test": "vscode-test"
   },
   "devDependencies": {
-    "@types/vscode": "^1.95.0",
+    "@types/vscode": "^1.75.0",
     "@types/mocha": "^10.0.9",
     "@types/node": "20.x",
-    "@typescript-eslint/eslint-plugin": "^8.10.0",
-    "@typescript-eslint/parser": "^8.7.0",
-    "eslint": "^9.13.0",
-    "typescript": "^5.6.3",
-    "@vscode/test-cli": "^0.0.10",
+    "@typescript-eslint/eslint-plugin": "^6.4.0",
+    "@typescript-eslint/parser": "^6.4.0",
+    "eslint": "^8.48.0",
+    "typescript": "^5.2.2",
     "@vscode/test-electron": "^2.4.1"
   }
 }
