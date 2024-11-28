@@ -1,71 +1,53 @@
-# for-fun README
+#### Ишкаев Александр Олегович М3119
+---
 
-This is the README for your extension "for-fun". After writing up a brief description, we recommend including the following sections.
+# Режим "Hello, World!"
 
-## Features
-
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
-
-For example if there is an image subfolder under your extension project workspace:
-
-\!\[feature X\]\(images/feature-x.png\)
-
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
-
-## Requirements
-
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
-
-## Extension Settings
-
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
-
-For example:
-
-This extension contributes the following settings:
-
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
-
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
-
-## Release Notes
-
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
+ Когда режим включен, перед каждым символом, который вы вводите, вставляется фраза: **"Hello, World!"**. 
 
 ---
 
-## Following extension guidelines
+### Возможности
 
-Ensure that you've read through the extensions guidelines and follow the best practices for creating your extension.
+- **Включение режима Hello World:**  
+  Перед каждым символом, который вы вводите, вставляется фраза: **"Hello, World!"**. 
 
-* [Extension Guidelines](https://code.visualstudio.com/api/references/extension-guidelines)
+- **Выключение режима Hello World:**  
+  Отключите плагин с помощью одной команды и вернитесь к обычной работе.
 
-## Working with Markdown
 
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
+---
 
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
+### Команды
 
-## For more information
+Это расширение предоставляет следующие команды:
 
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
+1. **Включить режим Hello World**  
+   Команда: `Hello World Mode: Enable`  
+   Включает плагин и начинает вставку между введенными символами  **"Hello, World!"**.
 
-**Enjoy!**
+2. **Выключить режим Hello World**  
+   Команда: `Hello World Mode: Disable`  
+   Отключает плагин и восстанавливает обычную работу с текстом.
+
+---
+
+### Как использовать
+
+1. Установите расширение в Visual Studio Code.
+2. Откройте палитру команд (`Ctrl+Shift+P` или `Cmd+Shift+P` на macOS).
+3. Введите `Hello World Mode: Enable` и нажмите Enter.  
+   - Начните вводить текст, и перед каждым символом будет вставляться фраза **"Hello, World!"**.
+4. Чтобы остановить режим, введите команду `Hello World Mode: Disable` в палитре команд.
+
+
+---
+
+### Пример работы
+
+Вот что происходит, когда вы вводите:
+
+| **Введенный текст** | **Результат**        |
+|---------------------|----------------------|
+| `h`             | `Hello, World!h`      |
+
